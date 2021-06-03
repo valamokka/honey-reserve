@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="welcomeScene"
+      alignment="CENTER"
+      maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" spacing="25" xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="Marton.Szabo.control.WelcomeController"
+      >
+   <children>
+      <Label fx:id="welcomeLabel" alignment="CENTER" text="Welcome to the Federal Honey Reserve">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label fx:id="dateLabel" alignment="CENTER" text="Today it is: ">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Button mnemonicParsing="false" onAction="#switchToPackSell" text="Pack/Sell" />
+      <Button mnemonicParsing="false" text="Market result" onAction="#switchToMarketResults"/>
+      <Button mnemonicParsing="false" text="Setup" onAction="#switchToSetup"/>
+
+   </children>
+</VBox>

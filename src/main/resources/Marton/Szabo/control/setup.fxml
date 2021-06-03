@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Marton.Szabo.control.SetupController">
+   <children>
+      <Label text="Provide the requested data!" />
+      <Label text="Type/Name" />
+      <TextField fx:id="kindField" />
+      <Label text="Weight" />
+      <TextField fx:id="weightField" />
+      <Label text="Selling price" />
+      <TextField fx:id="sellingPriceField" />
+      <Label text="Flat cost" />
+      <TextField fx:id="flatCostField" />
+      <Button mnemonicParsing="false"  text="Register in database" onAction="#createHoney"/>
+      <Button mnemonicParsing="false" text="Update selling price" onAction="#updateSellingPrice" />
+      <Button mnemonicParsing="false" text="Update flat cost" onAction="#updateFlatCost" />
+      <Button mnemonicParsing="false" text="Delete from database" onAction="#deleteHoney" />
+      <Button mnemonicParsing="false" text="Delete  all from database" onAction="#deleteAllHoneys" />
+      <Button mnemonicParsing="false" text="Back" onAction="#switchToWelcome" />
+   </children>
+</VBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Marton.Szabo.control.PackSellController">
+   <children>
+      <Button layoutX="14.0" layoutY="274.0" mnemonicParsing="false" onAction="#addHoney" text="Pack" />
+      <Button layoutX="14.0" layoutY="338.0" mnemonicParsing="false" onAction="#deleteHoney" text="Unpack" />
+      <Button layoutX="156.0" layoutY="274.0" mnemonicParsing="false" text="Sell" />
+      <Button layoutX="152.0" layoutY="338.0" mnemonicParsing="false" onAction="#switchToWelcome" text="Back" />
+      <Label layoutX="27.0" layoutY="39.0" text="Choose the type of honey" />
+      <ChoiceBox fx:id="kindBox" layoutX="27.0" layoutY="68.0" prefWidth="150.0" />
+      <Label layoutX="27.0" layoutY="112.0" text="Choose weight" />
+      <ChoiceBox fx:id="weightBox" layoutX="27.0" layoutY="143.0" prefWidth="150.0" />
+      <Label layoutX="27.0" layoutY="184.0" text="Quantity" />
+      <TextField fx:id="quantityField" layoutX="27.0" layoutY="217.0" prefHeight="26.0" prefWidth="36.0" />
+      <ListView fx:id="listOfHoneys" layoutX="234.0" layoutY="39.0" prefHeight="315.0" prefWidth="332.0" />
+   </children>
+</Pane>
